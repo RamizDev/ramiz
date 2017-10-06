@@ -103,16 +103,16 @@ include 'classes/Superadmin.php';
            function eAge()  
            {  
                 var data = google.visualization.arrayToDataTable([  
-                          ['dateOfBirth', 'Number'],  
+                          ['workShift', 'Number'],  
                           <?php  
                           while($row = $eAge->fetch(PDO::FETCH_ASSOC))  
                           {  
-                               echo "['".$row["dateOfBirth"]."', ".$row["number"]."],";  
+                               echo "['".$row["workShift"]."', ".$row["number"]."],";  
                           }  
                           ?>  
                      ]);  
                 var options = {  
-                      title: 'Employees by Age',  
+                      title: 'Employees by work Shift',  
                       //is3D:true,  
                       pieHole: 0.4  
                      };  

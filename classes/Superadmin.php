@@ -159,7 +159,7 @@ public function view_all_member_eCat(){
   return $eCat;
 }
 public function view_all_member_eAge(){
-  $query = "SELECT dateOfBirth, count(*) as number  FROM tbl_add_member GROUP BY dateOfBirth";
+  $query = "SELECT workShift, count(*) as number  FROM tbl_add_member GROUP BY workShift";
   $eAge = $this->db_con->query($query);
 
   return $eAge;
